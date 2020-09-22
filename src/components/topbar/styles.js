@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     },
 
     backButton: {
-        height: 25,
+        height: 30,
         width: 15,
         marginLeft: 15,
     },
