@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     },
 
     weeAppIcon: {
-        marginTop: 120,
+        marginTop: 40,
     },
 
     text: {

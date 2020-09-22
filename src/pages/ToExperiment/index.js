@@ -1,10 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import styles from './styles';
+import TopBar from '../../components/topbar/index'
 
 function ToExperiment() {
     return(
-        <View></View>
+        <>
+        <TopBar />
+        <View>
+            <Text>Experimentar</Text>
+        </View>
+        </>
     )
 }
 
