@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
     },
 
     textTopBarBold: {
+        fontSize: 23,
         fontWeight: '700',
-        color: '#00EAE0'
-
+        color: '#00EAE0',
     },  
 
 

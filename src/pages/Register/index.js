@@ -6,7 +6,7 @@ import TopBar from '../../components/topbar/index';
 function Register() {
     return(
         <>
-        <TopBar />
+        <TopBar title='Faça seu cadastro' />
             <View style={styles.containerRegister}>
                 <View styles={styles.InputBlock}>
                     <Text style={styles.textDescription}>E-mail</Text>
