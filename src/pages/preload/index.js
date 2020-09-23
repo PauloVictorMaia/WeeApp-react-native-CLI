@@ -10,7 +10,7 @@ function Preload({navigation}) {
             if(token){
 
             } else {
-                navigation.navigate('Landing');
+                navigation.navigate('TabsNavigation');
             };
         };
 

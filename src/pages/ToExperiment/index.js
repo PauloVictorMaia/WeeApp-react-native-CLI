@@ -8,7 +8,7 @@ function ToExperiment() {
         <>
         <TopBar />
         <View>
-            <Text>Experimentar</Text>
+               
         </View>
         </>
     )
