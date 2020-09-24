@@ -15,6 +15,6 @@ function Routes() {
             </Navigator>
         </NavigationContainer>
     )
-}
+};
 
 export default Routes;

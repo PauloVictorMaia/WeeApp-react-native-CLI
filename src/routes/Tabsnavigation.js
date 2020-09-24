@@ -1,17 +1,18 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ToExperiment from '../pages/ToExperiment';
-import Landing from '../pages/Landing';
-import Login from '../pages/Login';
+import Profile from '../pages/Profile';
+import Home from '../pages/Home';
+import TabBarCustom from '../components/TabBarCustom';
 
 const Tab = createBottomTabNavigator();
 
 function TabsNavigation() {
     return (
-        <Tab.Navigator>
-            <Tab.Screen name='Experiment' component={ToExperiment}/>
-            <Tab.Screen name='Landing' component={Landing}/>
-            <Tab.Screen name='Login' component={Login} />
+        <Tab.Navigator initialRouteName='Experiment' tabBar={props=><TabBarCustom {...props} />}>
+            <Tab.Screen name='Home' component={Home} options={{tabBarLabel:'Landing'}} />
+            <Tab.Screen name='Experiment' component={ToExperiment} options={{tabBarLabel:'Explorar'}} />
+            <Tab.Screen name='Profile' component={Profile} options={{tabBarLabel:'Perfil'}} />
         </Tab.Navigator>
     );
 };

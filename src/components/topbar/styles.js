@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
         fontSize: 23,
         fontWeight: '700',
         color: '#00EAE0',
+        marginLeft: -80,
     },  
 
 

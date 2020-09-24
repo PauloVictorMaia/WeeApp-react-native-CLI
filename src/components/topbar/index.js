@@ -6,6 +6,7 @@ import WeeAppIcon from '../../assets/images/wee-icon-white-1.png';
 import { useNavigation } from '@react-navigation/native';
 
 function TopBar ({title, subtitle}) {
+  
   const {goBack} = useNavigation();
   function GoBack() {
     goBack();
@@ -14,7 +15,7 @@ function TopBar ({title, subtitle}) {
   return(
       <View style={styles.containerTopBar}>
           <Text style={styles.backButton} onPress={GoBack}><Image source={BackButton}/></Text>
-  <Text style={styles.textTopBar}>{title}</Text><Text style={styles.textTopBarBold}>{subtitle}</Text>
+          <Text style={styles.textTopBar}>{title}</Text><Text style={styles.textTopBarBold}>{subtitle}</Text>
           <Image style={styles.weeAppIcon} source={WeeAppIcon} />
       </View>
   )
