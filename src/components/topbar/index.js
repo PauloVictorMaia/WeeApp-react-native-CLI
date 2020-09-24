@@ -5,10 +5,9 @@ import BackButton from '../../assets/images/Vector.png';
 import WeeAppIcon from '../../assets/images/wee-icon-white-1.png';
 import { useNavigation } from '@react-navigation/native';
 
-function TopBar ({title, subtitle}) {
-  
+ function TopBar ({title, subtitle}) {
   const {goBack} = useNavigation();
-  function GoBack() {
+   function GoBack() {
     goBack();
   };
 

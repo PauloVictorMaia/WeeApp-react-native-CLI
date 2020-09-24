@@ -11,8 +11,24 @@ function Profile() {
         <View style={styles.container}> 
             <View style={styles.imageContainer}>
                 <Image style={styles.userImage} source={UserImage} />
-                <Text>Victor Nery</Text>
-            </View>   
+                <Text style={styles.userName}>Victor Nery</Text>
+            </View> 
+            
+            <View style={styles.ContentContainer}>
+                <View style={styles.hideContainer}>
+                    <Text style={styles.hideInformation}>Ocultar informações</Text>
+                </View>
+                
+                <View style={styles.userContent}>
+                    <Text style={styles.content}>victornery@gmail.com</Text>
+                </View>
+
+                <View style={styles.userContent}>
+                    <Text style={styles.content}>(011) 98556-8776</Text>
+                </View>
+
+                <Text style={styles.editInformation}>Editar Informações</Text>
+            </View>  
         </View>
     </>
     );

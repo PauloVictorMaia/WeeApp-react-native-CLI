@@ -1,18 +1,19 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Login from '../pages/Login/index';
-import Landing from '../pages/Landing/index';
+import Landing from '../pages/Landing';
+import Login from '../pages/Login';
 import Register from '../pages/Register/index';
 
-const drawer = createDrawerNavigator();
-
+const Drawer = createDrawerNavigator();
+    
 function DrawerNavigation() {
-
-    <drawer.Navigator>
-        <drawer.Screen name='Login' component={Login} />
-        <drawer.Screen name='Landing' component={Landing} />
-        <drawer.Screen name='Register' component={Register} />
-    </drawer.Navigator>
+    return(
+    <Drawer.Navigator initialRouteName='Landing'>
+            <Drawer.Screen name='Landing' component={Landing} />
+            <Drawer.Screen name='Login' component={Login} />
+            <Drawer.Screen name='Register' component={Register} />
+    </Drawer.Navigator>
+);
 };
 
 export default DrawerNavigation;

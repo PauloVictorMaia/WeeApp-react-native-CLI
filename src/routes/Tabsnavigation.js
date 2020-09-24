@@ -9,11 +9,13 @@ const Tab = createBottomTabNavigator();
 
 function TabsNavigation() {
     return (
+        <>
         <Tab.Navigator initialRouteName='Experiment' tabBar={props=><TabBarCustom {...props} />}>
             <Tab.Screen name='Home' component={Home} options={{tabBarLabel:'Landing'}} />
             <Tab.Screen name='Experiment' component={ToExperiment} options={{tabBarLabel:'Explorar'}} />
             <Tab.Screen name='Profile' component={Profile} options={{tabBarLabel:'Perfil'}} />
         </Tab.Navigator>
+    </>
     );
 };
 
