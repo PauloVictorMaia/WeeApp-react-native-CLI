@@ -19,7 +19,7 @@ function TabBarCustom({navigation, state}) {
                 <HomeIcon style={{opacity: state.index===0? 1 : 0.7}} width='30' height='30' fill='#fff' />
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.CenterItem}  onPress={() => goTo('Experiment') }>
+            <TouchableOpacity style={styles.CenterItem}  onPress={() => goTo('Explore') }>
                 <SmartPhoneIcon style={{opacity: state.index===1? 1 : 0.7}} width='50' height='50' fill='#fff' />
             </TouchableOpacity>
 

@@ -20,10 +20,17 @@ function Profile() {
                 </View>
                 
                 <View style={styles.userContent}>
+                    <Text style={styles.ContentItem}>Nome:</Text>
+                    <Text style={styles.content}>Victor Nery Teixeira</Text>
+                </View>
+                
+                <View style={styles.userContent}>
+                    <Text style={styles.ContentItem}>e-mail:</Text>
                     <Text style={styles.content}>victornery@gmail.com</Text>
                 </View>
 
                 <View style={styles.userContent}>
+                    <Text style={styles.ContentItem}>Fone:</Text>
                     <Text style={styles.content}>(011) 98556-8776</Text>
                 </View>
 

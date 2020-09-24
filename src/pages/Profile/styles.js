@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
         width: 300,
         height: 50,
         backgroundColor: '#e6e6e6',
+        flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
         color: '#000',
         fontWeight: 'bold',
         fontSize: 18,
+        marginLeft: 30,
     },
 
     ContentContainer: {
@@ -61,6 +63,12 @@ const styles = StyleSheet.create({
         fontSize: 17,
         marginLeft: 80,
         marginTop: 30,
+        fontWeight: 'bold',
+    },
+
+    ContentItem: {
+        color: '#7E2DC2',
+        fontSize: 15,
         fontWeight: 'bold',
     },
 
