@@ -5,8 +5,6 @@ import HomeIcon from '../../assets/images/home.svg';
 import SmartPhoneIcon from '../../assets/images/smartphone.svg';
 import UserIcon from '../../assets/images/user.svg';
 
-
-
 function TabBarCustom({navigation, state}) {
     
     const goTo = (ScreenName) => {

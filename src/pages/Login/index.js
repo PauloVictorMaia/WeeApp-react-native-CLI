@@ -4,7 +4,7 @@ import styles from './styles';
 import WeeAppIcon from '../../assets/images/wee-icon-white-1.png';
 import TopBar from '../../components/topbar';
 
-function Login(){
+function Login({navigation}){
     function PressLogin() {
         Alert.alert("WeeApp", 'Sistema de Login ainda em produção')
     };
@@ -22,6 +22,10 @@ function Login(){
                     <Text style={styles.textButton}>Entrar</Text>
                 </TouchableOpacity>
                 <Text style={styles.textPassword}>Esqueceu sua senha?</Text>
+                <Text style={styles.textAccount} 
+                                onPress={() =>navigation.navigate('Register')}>
+                                    Deseja criar uma conta?
+                </Text>
            </View>
        </View>
     </>

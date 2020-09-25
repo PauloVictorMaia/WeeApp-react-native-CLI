@@ -1,18 +1,24 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Login from '../pages/Login';
-import Register from '../pages/Register/index';
-import Home from '../pages/Home';
+import {NavigationContainer} from '@react-navigation/native';
+import Preload from '../pages/preload';
+import TabsNavigation from './Tabsnavigation';
+import {FazerLogin, GoToOptions}  from './StackNavigation';
 
 const Drawer = createDrawerNavigator();
     
 function DrawerNavigation() {
     return(
-    <Drawer.Navigator initialRouteName='Home'>
-            <Drawer.Screen name='Home' component={Home} />
-            <Drawer.Screen name='Login' component={Login} />
-            <Drawer.Screen name='Register' component={Register} />
+    <>
+    <NavigationContainer>
+    <Drawer.Navigator initialRouteName='Preload'>
+            <Drawer.Screen name='TabsNavigation' component={TabsNavigation} options={{drawerLabel:'Home'}}/>
+            <Drawer.Screen name='Login' component={FazerLogin} options={{drawerLabel:'Login'}} />
+            <Drawer.Screen name='Opções' component={GoToOptions} options={{drawerLabel:'Opções'}} />
+            <Drawer.Screen name='Preload' component={Preload} options={{drawerLabel:'Recarregar'}} />
     </Drawer.Navigator>
+    </NavigationContainer>
+    </>
 );
 };
 

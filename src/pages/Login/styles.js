@@ -67,7 +67,14 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#fff',
         fontWeight: 'bold',
-        marginTop: 90,
+        marginTop: 50,
+    },
+
+    textAccount: {
+        color: '#fff',
+        marginTop: 25,
+        fontSize: 16,
+        fontWeight: 'bold',
     },
 });
 
