@@ -39,6 +39,29 @@ const styles = StyleSheet.create({
         height: 30,
     },
 
+    scrollView: {
+        marginTop: 20,
+    },
+    
+    scrollContainer: {
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    
+    exploreImages: {
+        width: 100,
+        height: 100,
+        margin: 10,
+        borderRadius: 4,
+    },
+
+    textScroll: {
+        color: '#808080',
+        fontWeight: 'bold',
+        fontSize: 16,
+
+    },
+
 });
 
 export default styles;
