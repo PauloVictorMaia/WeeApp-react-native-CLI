@@ -13,7 +13,7 @@ function TabBarCustom({navigation, state}) {
 
     return(
         <View style={styles.TabBarContainer }>
-            <TouchableOpacity  onPress={() => goTo('Home') }>
+            <TouchableOpacity  onPress={() => goTo('Home')}>
                 <HomeIcon style={{opacity: state.index===0? 1 : 0.7}} width='30' height='30' fill='#fff' />
             </TouchableOpacity>
 
