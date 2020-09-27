@@ -25,7 +25,7 @@ function Explore () {
                 <SearchIcon width='30' height='30' fill='#7E2DC2'  />
             </View>
 
-            <ScrollView style={styles.scrollView} horizontal={true}>
+            <ScrollView style={styles.scrollView} horizontal={true} showsHorizontalScrollIndicator={false}>
                 <View style={styles.scrollContainer}>
                     <Image style={styles.exploreImages} source={Nordeste} />
                     <Text style={styles.textScroll}>Nordeste</Text>
@@ -43,7 +43,7 @@ function Explore () {
 
                 <View style={styles.scrollContainer}>
                     <Image style={styles.exploreImages} source={Norte} />
-                        <Text style={styles.textScroll}>Norte</Text>
+                    <Text style={styles.textScroll}>Norte</Text>
                 </View>
 
                 <View style={styles.scrollContainer}>

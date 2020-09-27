@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
 
     scrollView: {
-        marginTop: 20,
+        marginTop: 10,
     },
     
     scrollContainer: {

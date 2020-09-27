@@ -6,22 +6,18 @@ import SmartPhoneIcon from '../../assets/images/smartphone.svg';
 import UserIcon from '../../assets/images/user.svg';
 
 function TabBarCustom({navigation, state}) {
-    
-    const goTo = (ScreenName) => {
-        navigation.navigate(ScreenName);
-    };
 
     return(
         <View style={styles.TabBarContainer }>
-            <TouchableOpacity  onPress={() => goTo('Home')}>
+            <TouchableOpacity  onPress={() => navigation.navigate('Home')}>
                 <HomeIcon style={{opacity: state.index===0? 1 : 0.7}} width='30' height='30' fill='#fff' />
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.CenterItem}  onPress={() => goTo('Explore') }>
+            <TouchableOpacity style={styles.CenterItem}  onPress={() => navigation.navigate('Explore')}>
                 <SmartPhoneIcon style={{opacity: state.index===1? 1 : 0.7}} width='50' height='50' fill='#fff' />
             </TouchableOpacity>
 
-            <TouchableOpacity  onPress={() => goTo('Profile') }>
+            <TouchableOpacity  onPress={() => navigation.navigate('Profile') }>
                 <UserIcon style={{opacity: state.index===2? 1 : 0.7}} width='30' height='30' fill='#fff'  />
             </TouchableOpacity>
         </View>
