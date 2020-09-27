@@ -11,11 +11,14 @@ import { useNavigation } from '@react-navigation/native';
     goBack();
   };
 
+  const {navigate} = useNavigation();
+
   return(
       <View style={styles.containerTopBar}>
           <Text style={styles.backButton} onPress={GoBack}><Image source={BackButton}/></Text>
           <Text style={styles.textTopBar}>{title}</Text><Text style={styles.textTopBarBold}>{subtitle}</Text>
-          <Image style={styles.weeAppIcon} source={WeeAppIcon} />
+          <Image style={styles.weeAppIcon} source={WeeAppIcon}
+          />
       </View>
   )
 };

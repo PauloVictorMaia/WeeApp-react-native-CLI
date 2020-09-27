@@ -61,6 +61,22 @@ function Explore () {
                     <Text style={styles.textScroll}>História</Text>
                 </View>
             </ScrollView>
+            <ScrollView style={styles.largeScrollView} horizontal={true} showsHorizontalScrollIndicator={false}>
+                <View style={styles.scrollContainer}>
+                    <Image style={styles.largeExploreImages} source={Historica} />
+                    <Text style={styles.textScroll}>História</Text>
+                </View>
+
+                <View style={styles.scrollContainer}>
+                    <Image style={styles.largeExploreImages} source={Historica} />
+                    <Text style={styles.textScroll}>História</Text>
+                </View>
+
+                <View style={styles.scrollContainer}>
+                    <Image style={styles.largeExploreImages} source={Historica} />
+                    <Text style={styles.textScroll}>História</Text>
+                </View>
+            </ScrollView>
         </View>
     </ScrollView> 
   )

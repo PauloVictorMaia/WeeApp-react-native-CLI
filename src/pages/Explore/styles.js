@@ -62,6 +62,16 @@ const styles = StyleSheet.create({
 
     },
 
+    largeScrollView: {
+        marginTop: 20,
+    },
+
+    largeExploreImages: {
+        width: 300,
+        height: 200,
+        margin: 10,
+    },
+
 });
 
 export default styles;
