@@ -11,7 +11,6 @@ export const GoToOptions = () => {
             <Navigator  initialRouteName="Options" screenOptions={{ headerShown: false }}> 
                <Screen name='Options' component={Options} />
             </Navigator>
-        
     )
 };
 
@@ -21,7 +20,6 @@ export const FazerLogin = () => {
                <Screen name='Login' component={Login} />
                <Screen name='Register' component={Register} />
             </Navigator>
-        
     )
 };
 

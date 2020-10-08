@@ -11,7 +11,7 @@ function Register() {
                 <View styles={styles.InputBlock}>
                     <Text style={styles.textDescription}>E-mail</Text>
                     <TextInput name='InputEmail' 
-                    placeholder='Seu melhor e-mail ' 
+                    placeholder='Seu melhor e-mail' 
                     style={styles.inputItem}/>
                 </View>
                 <View>
